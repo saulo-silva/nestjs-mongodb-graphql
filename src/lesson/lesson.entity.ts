@@ -1,19 +1,19 @@
-import {Column, Entity, ObjectIdColumn, PrimaryColumn} from "typeorm";
+import { Column, Entity, ObjectIdColumn, PrimaryColumn } from 'typeorm';
 
 @Entity()
 export class Lesson {
-    @ObjectIdColumn()
-    _id: string;
+  @ObjectIdColumn()
+  _id: string;
 
-    @PrimaryColumn()
-    id: string;
+  @PrimaryColumn()
+  id: string;
 
-    @Column()
-    name: string;
+  @Column()
+  name: string;
 
-    @Column()
-    startDate: string;
+  @Column()
+  startDate: string;
 
-    @Column()
-    endDate: string;
+  @Column()
+  endDate: string;
 }
